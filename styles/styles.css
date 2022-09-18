@@ -263,10 +263,12 @@ h1, h2, h3, p {
 .work-text {
     position: absolute;
     bottom: 0;
-    
     width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-weight: 700;
     line-height: 1.14;
@@ -548,6 +550,26 @@ h1, h2, h3, p {
     background-color: var(--blue-text-color);
 }
 
+/* контейнер підписки, форма */
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 20px;
+}
+.footer-form {
+    display: flex;
+    gap: 12px;
+}
+
+
+
+
+
+
+/* Backdrop, modal */
 .backdrop {
     position: fixed;
     top: 0;
@@ -604,4 +626,44 @@ transform: translateY(-100%);
 }
 .close-icon {
     fill: currentColor;
+}
+
+/* Форми */
+.form {
+    padding: 40px;
+}
+.text-modal {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.button-server {
+    display: block;
+    padding: 10px 52px;
+    margin: 0 auto;
+    font-family: inherit;
+    background-color: var(--button-backg-color);
+    color: var(--white-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    min-width: 200px;
+    align-items: center;
+    letter-spacing: 0.06em;
 }
